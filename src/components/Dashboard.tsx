@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useData } from '@/contexts/DataContext';
@@ -19,7 +18,7 @@ export const Dashboard: React.FC = () => {
     done: tasks.filter(task => task.status === 'Done').length,
   };
 
-  // Check if user is admin based on role
+  // if user is admin based oe role
   const isAdmin = user?.role === 'admin';
 
   if (isLoading) {
